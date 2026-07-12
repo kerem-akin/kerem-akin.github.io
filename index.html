@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kerem Akin — Student Engineer &amp; Developer</title>
+<meta name="description" content="Kerem Akin — high school engineer, game developer, and pianist. Projects in game development, engineering design, and creative work.">
+<style>
+  :root{
+    --ink:#1a1d21;
+    --muted:#5c6470;
+    --accent:#1b4fd8;
+    --bg:#ffffff;
+    --soft:#f5f6f8;
+    --line:#e6e8ec;
+    --maxw:840px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);background:var(--bg);line-height:1.65;font-size:17px;
+  }
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+
+  /* NAV */
+  nav{position:sticky;top:0;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:10}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;max-width:var(--maxw);margin:0 auto}
+  .nav-name{font-weight:700;letter-spacing:-.01em}
+  .nav-links a{color:var(--muted);text-decoration:none;margin-left:22px;font-size:15px}
+  .nav-links a:hover{color:var(--accent)}
+  .nav-links a.resume{color:var(--accent);font-weight:600}
+
+  /* HERO */
+  header.hero{padding:90px 0 70px}
+  .hero h1{font-size:44px;letter-spacing:-.02em;line-height:1.15}
+  .hero .tag{color:var(--accent);font-weight:600;margin-top:10px;font-size:20px}
+  .hero p.lead{color:var(--muted);margin-top:18px;max-width:600px;font-size:18px}
+
+  /* SECTIONS */
+  section{padding:56px 0;border-top:1px solid var(--line)}
+  h2{font-size:26px;letter-spacing:-.01em;margin-bottom:8px}
+  .section-sub{color:var(--muted);margin-bottom:36px;max-width:640px}
+
+  .project{margin-bottom:64px}
+  .project:last-child{margin-bottom:0}
+  .project h3{font-size:21px;margin-bottom:4px}
+  .meta{color:var(--muted);font-size:14px;margin-bottom:14px}
+  .meta .chip{display:inline-block;background:var(--soft);border:1px solid var(--line);border-radius:999px;padding:2px 10px;margin-right:6px;font-size:13px}
+  .project p{margin-bottom:12px}
+
+  .par{margin:14px 0}
+  .par strong{display:block;font-size:14px;text-transform:uppercase;letter-spacing:.05em;color:var(--accent);margin-bottom:2px}
+
+  /* MEDIA PLACEHOLDERS — replace with real <img>/<video> */
+  .media{border:2px dashed #c3c9d4;border-radius:10px;background:var(--soft);
+    padding:34px 20px;text-align:center;color:var(--muted);font-size:15px;margin:18px 0}
+  .media b{color:var(--ink)}
+
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .vgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  .vgrid video{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:10px;background:#000;cursor:pointer}
+  @media(max-width:640px){.grid2{grid-template-columns:1fr}.vgrid{grid-template-columns:1fr 1fr}.hero h1{font-size:34px}}
+
+  /* PIANO */
+  .piano-note{background:var(--soft);border-left:3px solid var(--accent);padding:16px 20px;border-radius:0 8px 8px 0;margin:18px 0;color:var(--muted);font-style:italic}
+
+  /* ABOUT */
+  .about-facts{list-style:none;margin-top:16px}
+  .about-facts li{padding:8px 0;border-bottom:1px dashed var(--line);color:var(--muted)}
+  .about-facts li b{color:var(--ink);font-weight:600}
+
+  /* FOOTER */
+  footer{border-top:1px solid var(--line);padding:44px 0;color:var(--muted);font-size:15px}
+  footer a{color:var(--accent);text-decoration:none}
+
+  /* TODO notes for Kerem — delete before publishing */
+  .todo{background:#fff8e1;border:1px solid #f0dc9a;border-radius:8px;padding:12px 16px;font-size:14px;color:#7a6210;margin:10px 0}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="nav-name" style="text-transform:uppercase;letter-spacing:.05em">Kerem Akin</div>
+    <div class="nav-links">
+      <a href="#projects">Projects</a>
+      <a href="#creative">Creative Work</a>
+      <a href="#about">About</a>
+      <a href="resume.pdf" class="resume">Resume</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <h1 style="text-transform:uppercase;letter-spacing:.06em">Kerem Akin</h1>
+    <div class="tag">Student engineer, developer &amp; maker</div>
+    <p class="lead">I build games, take machines apart to understand how they work, lead technical teams, and learn by making. Rising senior at Spotswood High School, Virginia.</p>
+    <p style="margin-top:16px;font-size:15px;color:var(--muted)">🏆 <b style="color:var(--ink)">TSA Webmaster:</b> 2<sup>nd</sup> in Virginia · Top 10 in the USA</p>
+  </div>
+</header>
+
+<section id="projects">
+  <div class="wrap">
+    <h2>Projects</h2>
+    <p class="section-sub">Selected work — built independently or through the Technology Student Association (TSA).</p>
+
+    <!-- ================= PROJECT 1: TSA WEBMASTER ================= -->
+    <div class="project">
+      <h3>TSA Webmaster — 2<sup>nd</sup> in Virginia · Top 10 in the USA</h3>
+      <div class="meta">
+        <span class="chip" style="background:#eef3ff;border-color:#c9d8f7;color:var(--accent);font-weight:600">🏆 National top-10</span>
+        <span class="chip">Web design &amp; development</span>
+        <span class="chip">Team project</span>
+      </div>
+      <p>In the TSA Webmaster competition, we designed and built a complete website against a national design brief. We placed <strong>2<sup>nd</sup> in Virginia</strong>, then earned <strong>top-10 national finalist recognition at the National TSA Conference</strong> held at National Harbor, MD in June 2026.</p>
+      <div class="par"><strong>My role</strong>Built the site as a two-person team with a classmate. <!-- TODO: Kerem'den detay: hangi kısımları kodladı, hangi tasarım kararlarını aldı --></div>
+      <img src="tsa-nationals.jpeg" alt="Kerem Akin at the National TSA Conference" style="width:100%;max-width:560px;display:block;border-radius:10px;margin:18px 0;border:1px solid var(--line)">
+      <p style="font-size:15px;margin-bottom:8px"><a href="https://harrisonburg-connect.github.io/Harrisonburg-Connect/" style="display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;padding:10px 22px;border-radius:8px">🌐 View the competition site: Harrisonburg Connect →</a></p>
+      <p style="font-size:15px"><a href="https://shs.rockingham.k12.va.us/o/shs/article/3014878" style="color:var(--accent);text-decoration:none;font-weight:600">Featured in Spotswood High School news: "Successful Trip for Spotswood TSA" →</a></p>
+      <div class="todo">TODO (Kerem): kendi rolü 2-3 cümle; hangi araçlar kullanıldı; kısaca brief neydi.</div>
+    </div>
+
+    <!-- ================= PROJECT 2: GAME ================= -->
+    <div class="project">
+      <h3>Independent Game Development</h3>
+      <div class="meta">
+        <span class="chip">GameMaker Language</span>
+        <span class="chip">Self-taught</span>
+        <span class="chip">Solo project</span>
+      </div>
+      <p>What began as a Python course turned into teaching myself GameMaker Language from scratch to build a game I had a vision for. Over several months — while preparing for my GCSE exams — I designed and implemented the game's mechanics, enemy AI behavior, pixel art, and physics, working on it every day until the world I imagined existed on screen.</p>
+
+      <div class="par"><strong>Problem</strong>I wanted enemy behavior that felt alive rather than scripted, and physics that stayed consistent as the game grew.</div>
+      <div class="par"><strong>Approach</strong>Iterative build-test-revise cycles: implement one system, break it, understand why, rebuild it better. <!-- TODO: game log'dan 1-2 somut örnek eklenecek --></div>
+      <div class="par"><strong>Result</strong>A complete, playable 2-D game — and a working habit of seeing long projects through.</div>
+
+      <div class="media">🎮 <b>Gameplay video</b> — 30–60 sn OBS kaydı buraya gelecek</div>
+      <p style="margin-top:6px"><a href="#" style="display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;padding:10px 22px;border-radius:8px">▶ Play the game on itch.io</a> <span style="color:var(--muted);font-size:14px;margin-left:8px"><!-- TODO: itch.io linki gelince href güncellenecek --></span></p>
+      <div class="grid2">
+        <div class="media">🖼 Screenshot 1</div>
+        <div class="media">🖼 Screenshot 2</div>
+      </div>
+      <div class="todo">TODO (Kerem): oyunun adı, gameplay videosu, 2-4 screenshot, dev log'dan "problem → çözüm" örnekleri. Dev log'un kendisi ayrı bir "Development Journey" alt sayfası olabilir.</div>
+    </div>
+
+    <!-- ================= PROJECT 2: TSA GAME DESIGN ================= -->
+    <div class="project">
+      <h3>TSA Video Game Design — Team Lead</h3>
+      <div class="meta">
+        <span class="chip">Unity</span>
+        <span class="chip">Team leadership</span>
+        <span class="chip">TSA Competition</span>
+      </div>
+      <p>Through the Technology Student Association, I moved from building alone to leading a team developing a game in Unity: assigning roles, running meetings, resolving technical disagreements, and keeping creativity balanced with feasibility as competition deadlines approached.</p>
+      <div class="media">🖼 <b>Team project media</b> — oyun görselleri / takım fotoğrafı / sonuç</div>
+      <div class="todo">TODO (Kerem): Kerem'in spesifik rolü ve aldığı kararlar; yarışma sonucu (varsa) — sadece doğrulanmış sonuç yazılacak; oyundan görseller.</div>
+    </div>
+
+    <!-- ================= PROJECT 3: TSA ENGINEERING DESIGN ================= -->
+    <div class="project">
+      <h3>TSA Engineering Design — Modular Smartphone Microscope</h3>
+      <div class="meta">
+        <span class="chip">Optics &amp; CAD (Onshape)</span>
+        <span class="chip">3D printing</span>
+        <span class="chip">13 design iterations</span>
+        <span class="chip">TSA Competition 2026</span>
+      </div>
+      <p>Many classrooms lack working microscopes — yet nearly every student carries a phone with a high-resolution camera. For the TSA theme "Engineering the Tools of Scientific Discovery," our team designed a <strong>MagSafe-mounted, 3D-printed modular microscope</strong> that turns a smartphone into a functional lab instrument, at a target cost under $25.</p>
+
+      <div class="par"><strong>How we started</strong>We bought a real microscope and dissected it to understand its optics and mechanics, then designed our own compact system from scratch: a rotating lens carousel (4×/10×/40×) with magnetic click-stops, a screw-lift focus stage, and a modular LED illumination box.</div>
+      <div class="grid2" style="margin:18px 0">
+        <img src="eng-sketch1.jpeg" alt="First hand sketch of the microscope design" style="width:100%;height:220px;object-fit:cover;border-radius:10px;border:1px solid var(--line)">
+        <img src="eng-sketch2.jpeg" alt="Hand sketches of microscope components" style="width:100%;height:220px;object-fit:cover;border-radius:10px;border:1px solid var(--line)">
+      </div>
+      <p style="font-size:14px;color:var(--muted);margin-top:-10px;text-align:center">First hand sketches from our design notebook — where every iteration started.</p>
+
+      <div class="par"><strong>Problem → solution (my favorite example)</strong>MagSafe rings are perfect circles, so the mount rotated slightly on every attach — misaligning the lens with the camera. We added an angular jut-out that registers against the phone's camera bump, turning alignment from a user-skill problem into a mechanically guaranteed result.</div>
+
+      <div class="par"><strong>Iteration, including failures</strong>Thirteen documented iterations: a clip-style mount that couldn't center (eliminated), a drop-in lens carousel where lenses shifted (redesigned with threaded seats), a rack-and-pinion focus system too bulky for a phone (replaced by a screw-lift), a light box too big to hold comfortably (shrunk and made modular). Each failure drove the next design.</div>
+
+      <div class="par"><strong>Result</strong>The prototype resolves onion epidermal cells at 4×, 10×, and 40× magnification. My role: co-lead on CAD modeling of the carousel, arm, and stage; microscope dissection; sketching; and writing the engineering portfolio.</div>
+
+      <img src="eng-optical.jpg" alt="Optical path diagram: LED to specimen to lens to camera" style="width:100%;max-width:640px;display:block;margin:18px auto;border-radius:10px;border:1px solid var(--line)">
+      <div class="grid2">
+        <img src="eng-prototype.jpeg" alt="3D-printed microscope prototype" style="width:100%;height:240px;object-fit:cover;border-radius:10px;border:1px solid var(--line)">
+        <img src="eng-carousel.jpeg" alt="Lens carousel engineering drawing" style="width:100%;height:240px;object-fit:contain;background:#fff;border-radius:10px;border:1px solid var(--line)">
+      </div>
+      <div class="todo">TODO (Kerem): istersen onion cell mikroskop görüntüsü de eklenir; tam portfolio PDF'ine link verilebilir.</div>
+    </div>
+
+    <!-- ================= PROJECT 4: ROSE-HULMAN CATAPULT ================= -->
+    <div class="project">
+      <h3>Operation Catapult — Rose-Hulman Institute of Technology</h3>
+      <div class="meta">
+        <span class="chip">Summer engineering program</span>
+        <span class="chip">Team build</span>
+        <span class="chip">Hands-on prototyping</span>
+      </div>
+      <p>At Rose-Hulman's Operation Catapult residential engineering program, we designed and built a working catapult from scratch — moving from concept sketches and calculations to a physical launch-tested machine.</p>
+      <div class="par"><strong>My role</strong>Group lead of a two-person team — we designed, built, and tested every part together.</div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0 6px">
+        <img src="catapult.jpeg" alt="Catapult project at Rose-Hulman Operation Catapult" style="width:100%;height:220px;object-fit:contain;background:var(--soft);border-radius:10px;border:1px solid var(--line)">
+        <img src="catapult-poster.jpeg" alt="Operation Catapult project poster" style="width:100%;height:220px;object-fit:contain;background:var(--soft);border-radius:10px;border:1px solid var(--line)">
+        <img src="catapult-calcs.jpeg" alt="Projectile-motion and energy calculations from the design notebook" style="width:100%;height:220px;object-fit:contain;background:var(--soft);border-radius:10px;border:1px solid var(--line)">
+      </div>
+      <p style="font-size:14px;color:var(--muted);text-align:center">The catapult, our project poster, and projectile-motion calculations from the design notebook.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="creative">
+  <div class="wrap">
+    <h2>Creative Work — Piano</h2>
+    <p class="section-sub">Self-taught, starting on a 44-key keyboard with YouTube tutorials. Through every move between Turkey, Dubai, and the United States, the piano never left my side.</p>
+
+    <div class="piano-note">It started in seventh grade, when I heard my father listening to Ludovico Einaudi's "Experience" while grading papers. I decided I would not stop until I learned it — a month of stubborn effort later, I played it on my school's grand piano.</div>
+
+    <div class="vgrid">
+      <div>
+        <video controls preload="metadata" src="videos/piano1.mp4"></video>
+        <p style="font-size:13px;color:var(--muted);margin-top:4px">🎹 Jamie Duffy — Solas</p>
+      </div>
+      <div>
+        <video controls preload="metadata" src="videos/piano2.mp4"></video>
+        <p style="font-size:13px;color:var(--muted);margin-top:4px">🎹 Gibran Alcocer — Idea 22</p>
+      </div>
+      <div>
+        <video controls preload="metadata" src="videos/piano3.mp4"></video>
+        <p style="font-size:13px;color:var(--muted);margin-top:4px">🎹 Drowning Love</p>
+      </div>
+      <div>
+        <video controls preload="metadata" src="videos/pianoold1.mp4"></video>
+        <p style="font-size:13px;color:var(--muted);margin-top:4px">🎹 Yiruma — River Flows in You <i>(early recording, four years ago)</i></p>
+      </div>
+      <div>
+        <video controls preload="metadata" src="videos/pianoold2.mp4"></video>
+        <p style="font-size:13px;color:var(--muted);margin-top:4px">🎹 Ludovico Einaudi — Experience <i>(early recording, four years ago — new version coming)</i></p>
+      </div>
+    </div>
+    <p>Since then I have kept challenging myself with advanced repertoire, including arranging the entire Interstellar soundtrack by ear.</p>
+
+    <div class="par" style="margin-top:24px"><strong>Repertoire</strong></div>
+    <ul class="about-facts">
+      <li><b>Ludovico Einaudi</b> — Experience</li>
+      <li><b>Hans Zimmer</b> — Interstellar</li>
+      <li><b>Yiruma</b> — River Flows in You</li>
+      <li><b>Gibran Alcocer</b> — Idea 22</li>
+      <li><b>Jamie Duffy</b> — Solas</li>
+      <li><b>Drowning Love</b></li>
+    </ul>
+    <div class="todo">TODO (Kerem): repertuvar listesini tamamla (4-5 parça). Video olarak en güçlü 2-3 tanesi yeter (Experience mutlaka) — hepsine video koymayalım, kalite > adet.</div>
+  </div>
+</section>
+
+<section id="summer">
+  <div class="wrap">
+    <h2>Summer Programs</h2>
+    <ul class="about-facts">
+      <li><b><a href="https://www.doe.virginia.gov/teaching-learning-assessment/specialized-instruction/governor-s-schools/summer-residential-governor-s-schools" style="color:var(--ink);text-decoration:none">Summer Residential Governor's School</a> — Mathematics, Science &amp; Technology</b> · University of Lynchburg · selective statewide 3-week program (about 100 students) · coursework incl. <i>The Dark Night Sky — Serious Questions for Real Astronomers</i> (college-level astronomy &amp; astrophysics) · July 5–25, 2026</li>
+      <li><b>Operation Catapult — Rose-Hulman Institute of Technology</b> · residential 2-week engineering program: team-based design-build project (see Projects above) · June 8–18, 2026</li>
+      <li><b>Sabancı University Summer High School Program</b> · 2-week residential program: Machine Learning &amp; AI, Python Programming, Quantum Physics, Industrial Engineering · August 4–16, 2024</li>
+    </ul>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <h2>About</h2>
+    <img src="headshot.jpeg" alt="Kerem Akin" style="width:150px;height:auto;border-radius:12px;float:right;margin:0 0 16px 24px;border:1px solid var(--line)">
+    <p>I grew up in Ankara, spent four years in Dubai, and now live in Virginia — three school systems, three fresh starts, one constant habit of building things to understand them. I plan to study engineering, drawn especially to the places where software meets physical systems.</p>
+    <ul class="about-facts">
+      <li><b>Now:</b> Rising senior at Spotswood High School, VA (Class of 2027) — senior-year courseload: 7 APs + DE Calculus · National Honor Society member</li>
+      <li><b>Recognition:</b> College Board National Recognition Program — Rural and Small-Town Recognition Award (2026)</li>
+      <li><b>Service:</b> Official SAT peer tutor (College Board) — tutoring a small group of peers in a 4-week virtual bootcamp · Sources of Strength Peer Leader</li>
+      <li><b>Also:</b> UKMT Intermediate Maths Challenge Gold (Best in School) · chess (1100 Elo) · Rubik's cube under 45 seconds · basketball</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><b>Contact:</b> <a href="mailto:akinkerem717@gmail.com">akinkerem717@gmail.com</a> · <a href="resume.pdf">Resume (PDF)</a></p>
+    <p style="margin-top:8px">© 2026 Kerem Akin · Designed and built by Kerem Akin</p>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('a[href]').forEach(a=>{if(!a.getAttribute('href').startsWith('#')){a.target='_blank';a.rel='noopener'}});
+</script>
+</body>
+</html>
