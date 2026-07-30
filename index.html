@@ -104,7 +104,7 @@
 <section id="projects">
   <div class="wrap">
     <h2>Projects</h2>
-    <p class="section-sub">Selected work — built independently or through the Technology Student Association (TSA).</p>
+    <p class="section-sub">Selected work — built independently or through the Technology Student Association (TSA). Each project below includes what went wrong, not just what shipped.</p>
 
     <!-- ================= PROJECT 1: TSA WEBMASTER ================= -->
     <div class="project">
@@ -114,48 +114,76 @@
         <span class="chip">Web design &amp; development</span>
         <span class="chip">Team project</span>
       </div>
-      <p>In the TSA Webmaster competition, we designed and built a complete website against a national design brief. We placed <strong>2<sup>nd</sup> in Virginia</strong>, then earned <strong>top-10 national finalist recognition at the National TSA Conference</strong> held at National Harbor, MD in June 2026.</p>
-      <div class="par"><strong>My role</strong>Built the site as a two-person team with a classmate. <!-- TODO: Kerem'den detay: hangi kısımları kodladı, hangi tasarım kararlarını aldı --></div>
+      <p>The 2026 brief: build a community resource hub that helps residents find local services. We built <strong>ConnectHBG</strong> for Harrisonburg, Virginia — an interactive directory of local resources with search, filters and a map view; a spotlight section for featured organisations; a community calendar; a crisis-resources page; a city-government page; a submission form so residents can add resources themselves; bilingual (English/Spanish) support and an accessibility toolbar. We placed <strong>2<sup>nd</sup> in Virginia</strong>, then earned <strong>top-10 national finalist recognition at the National TSA Conference</strong> at National Harbor, MD in June 2026.</p>
+
+      <div class="par"><strong>My role</strong>Product direction and quality control on a two-person team. I wrote the detailed feature specifications, ran the testing cycle across fifteen-plus rounds of revisions — logging every layout break, dead link and broken interaction — and made the architecture call to split the single-page app into four linked pages so the entry met the TSA three-page requirement without losing the flow of the main hub.</div>
+
+      <div class="par"><strong>What I learned</strong>Most of my previous work was solo and self-contained. Here the standard wasn't "does it run on my machine" but "can a stranger find a food bank in ten seconds, on a phone, in Spanish." That reframed testing from checking my own code to watching for the places a real user would give up.</div>
       <img src="tsa-nationals.jpeg" alt="Kerem Akin at the National TSA Conference" style="width:100%;max-width:560px;display:block;border-radius:10px;margin:18px 0;border:1px solid var(--line)">
       <p style="font-size:15px;margin-bottom:8px"><a href="https://harrisonburg-connect.github.io/Harrisonburg-Connect/" style="display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;padding:10px 22px;border-radius:8px">🌐 View the competition site: Harrisonburg Connect →</a></p>
       <p style="font-size:15px"><a href="https://shs.rockingham.k12.va.us/o/shs/article/3014878" style="color:var(--accent);text-decoration:none;font-weight:600">Featured in Spotswood High School news: "Successful Trip for Spotswood TSA" →</a></p>
-      <div class="todo">TODO (Kerem): kendi rolü 2-3 cümle; hangi araçlar kullanıldı; kısaca brief neydi.</div>
     </div>
 
     <!-- ================= PROJECT 2: GAME ================= -->
     <div class="project">
-      <h3>Independent Game Development</h3>
+      <h3><i>Shards of Balance</i> — a 2-D action platformer, built solo</h3>
       <div class="meta">
         <span class="chip">GameMaker Language</span>
         <span class="chip">Self-taught</span>
         <span class="chip">Solo project</span>
+        <span class="chip">6 levels + boss fight</span>
       </div>
-      <p>What began as a Python course turned into teaching myself GameMaker Language from scratch to build a game I had a vision for. Over several months — while preparing for my GCSE exams — I designed and implemented the game's mechanics, enemy AI behavior, pixel art, and physics, working on it every day until the world I imagined existed on screen.</p>
+      <p>A Python course taught me I loved coding. What I actually wanted to build, though, was a world — so I taught myself GameMaker Language from scratch and spent months building <strong><i>Shards of Balance</i></strong>: a pixel-art platformer where the Crystal of Balance has shattered and you fight through six levels of a corrupted realm to restore it. I designed and coded every system myself — while preparing for my GCSE exams.</p>
 
-      <div class="par"><strong>Problem</strong>I wanted enemy behavior that felt alive rather than scripted, and physics that stayed consistent as the game grew.</div>
-      <div class="par"><strong>Approach</strong>Iterative build-test-revise cycles: implement one system, break it, understand why, rebuild it better. <!-- TODO: game log'dan 1-2 somut örnek eklenecek --></div>
-      <div class="par"><strong>Result</strong>A complete, playable 2-D game — and a working habit of seeing long projects through.</div>
+      <img src="game-menu.jpg" alt="Shards of Balance title screen" style="width:100%;border-radius:10px;margin:18px 0 6px;border:1px solid var(--line)">
+      <p style="font-size:14px;color:var(--muted);text-align:center;margin-bottom:22px">The title screen — new game, continue from your last level, or quit.</p>
 
-      <div class="media">🎮 <b>Gameplay video</b> — 30–60 sn OBS kaydı buraya gelecek</div>
-      <p style="margin-top:6px"><a href="#" style="display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;padding:10px 22px;border-radius:8px">▶ Play the game on itch.io</a> <span style="color:var(--muted);font-size:14px;margin-left:8px"><!-- TODO: itch.io linki gelince href güncellenecek --></span></p>
+      <div class="par"><strong>What's in it</strong>Six hand-built levels across forest, cavern and boss-arena biomes; six enemy types with distinct behaviour (chasing skeletons, slow-but-tanky plants, ranged fire spirits, speed-draining haunted skulls, archers, and an enemy spawner); three NPCs who carry the story; health and speed potions; breakable crates; fire traps; a special ability; scripted cutscenes; and a final boss, Exilion, with three attack phases.</div>
+
       <div class="grid2">
-        <div class="media">🖼 Screenshot 1</div>
-        <div class="media">🖼 Screenshot 2</div>
+        <img src="game-level1.jpg" alt="Level one of Shards of Balance" style="width:100%;height:200px;object-fit:cover;border-radius:10px;border:1px solid var(--line)">
+        <img src="game-cave.jpg" alt="The Forsaken Cavern level with dynamic lighting" style="width:100%;height:200px;object-fit:cover;border-radius:10px;border:1px solid var(--line)">
       </div>
-      <div class="todo">TODO (Kerem): oyunun adı, gameplay videosu, 2-4 screenshot, dev log'dan "problem → çözüm" örnekleri. Dev log'un kendisi ayrı bir "Development Journey" alt sayfası olabilir.</div>
+      <p style="font-size:14px;color:var(--muted);text-align:center;margin:6px 0 22px">Level one, and the hidden cavern biome — which runs its own lighting system and floating-particle effects.</p>
+
+      <div class="par"><strong>The engineering problem I'm proudest of</strong>Difficulty had to rise without me building a new enemy for every level. Instead I made <em>variants</em>: the same enemy object reads its speed, damage and health from its creation event, and spawns a visual effect above itself — a blue aura for fast versions, a red one for high-damage versions — so the player can read the threat instantly. One object, many difficulty tiers, and the game teaches its own rules without a tutorial.</div>
+
+      <div class="par"><strong>Systems I had to build from nothing</strong>A dialogue system, a camera controller, room transitions, screen shake, parallax backgrounds, a particle controller, a white flash shader for damage feedback, a save system for "continue," and a cutscene engine for the ending.</div>
+
+      <div class="grid2">
+        <img src="game-ability.jpg" alt="Obtaining the Witch's Infernal Blaze ability" style="width:100%;height:200px;object-fit:cover;border-radius:10px;border:1px solid var(--line)">
+        <img src="game-boss.jpg" alt="The final boss fight against Exilion" style="width:100%;height:200px;object-fit:cover;border-radius:10px;border:1px solid var(--line)">
+      </div>
+      <p style="font-size:14px;color:var(--muted);text-align:center;margin:6px 0 22px">A chest grants the Witch's Infernal Blaze, which recharges every 30 wand shots — and the final fight against Exilion.</p>
+
+      <div class="par"><strong>What I'd fix</strong>Writing my own evaluation was the most useful part of the project. My honest verdict: the enemy AI is reactive rather than smart, the menu is plain, and the difficulty curve between the last level and the boss is uneven. The next version needs varied enemy behaviour, a second weapon, and a rebalanced early game.</div>
+
+      <div class="grid2" style="margin-top:18px">
+        <img src="game-poster.jpg" alt="The Realm's Guide — game manual poster designed by Kerem Akin" style="width:100%;height:280px;object-fit:contain;background:var(--soft);border-radius:10px;border:1px solid var(--line)">
+        <img src="game-ending.jpg" alt="Final cutscene artwork" style="width:100%;height:280px;object-fit:cover;border-radius:10px;border:1px solid var(--line)">
+      </div>
+      <p style="font-size:14px;color:var(--muted);text-align:center;margin-top:6px">The player's guide I designed for the game, and hand-drawn art from the closing cutscene.</p>
+
+      <p style="margin-top:18px"><a href="#" style="display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;padding:10px 22px;border-radius:8px">▶ Play Shards of Balance on itch.io</a></p>
+      <div class="todo">TODO: itch.io linki gelince butonun href'i güncellenecek; istersen 30-60 sn gameplay videosu da eklenir.</div>
     </div>
 
     <!-- ================= PROJECT 2: TSA GAME DESIGN ================= -->
     <div class="project">
-      <h3>TSA Video Game Design — Team Lead</h3>
+      <h3>TSA Video Game Design — <i>Hollowpoint</i> (Unity, team lead)</h3>
       <div class="meta">
         <span class="chip">Unity</span>
-        <span class="chip">Team leadership</span>
+        <span class="chip">Team lead</span>
+        <span class="chip">Programmer &amp; level design</span>
         <span class="chip">TSA Competition</span>
       </div>
-      <p>Through the Technology Student Association, I moved from building alone to leading a team developing a game in Unity: assigning roles, running meetings, resolving technical disagreements, and keeping creativity balanced with feasibility as competition deadlines approached.</p>
-      <div class="media">🖼 <b>Team project media</b> — oyun görselleri / takım fotoğrafı / sonuç</div>
-      <div class="todo">TODO (Kerem): Kerem'in spesifik rolü ve aldığı kararlar; yarışma sonucu (varsa) — sadece doğrulanmış sonuç yazılacak; oyundan görseller.</div>
+      <p>The brief was to take a retro concept and rebuild it with something that wasn't possible back then. Our team pitched several ideas; the one we built was <strong><i>Hollowpoint</i></strong> — my concept. You play an illuminating ghost collecting soul fragments through the abandoned city of Halomyre, trading them to open doors deeper into the map. The modern twist is a <em>corruption mechanic</em>: your future self appears to help you, but every appearance destabilises the world — distorting visuals, faking messages, and granting the ghosts new abilities. Help has a cost.</p>
+
+      <div class="par"><strong>My role</strong>Team lead, and a programmer on the build. I assigned roles, ran meetings and kept scope realistic against the competition deadline, while building the soul-fragment system, puzzle logic, the guiding-light navigation cues, the cave layout and tileset, and the main menu. I also spent several sessions untangling Unity version-control problems so the whole team could work on one project without overwriting each other.</div>
+
+      <div class="par"><strong>What building in a team taught me</strong>Working alone on <i>Shards of Balance</i>, every decision was mine and every bug was mine. Leading a Unity project moved the hard part somewhere else: agreeing on scope, keeping the story ambitious but shippable, resolving technical disagreements, and making sure the pieces different people built actually fit together.</div>
+
+      <div class="todo">TODO (Kerem): oyundan 2-3 ekran görüntüsü / build görseli eklenecek.</div>
     </div>
 
     <!-- ================= PROJECT 3: TSA ENGINEERING DESIGN ================= -->
@@ -181,6 +209,7 @@
       <div class="par"><strong>Iteration, including failures</strong>Thirteen documented iterations: a clip-style mount that couldn't center (eliminated), a drop-in lens carousel where lenses shifted (redesigned with threaded seats), a rack-and-pinion focus system too bulky for a phone (replaced by a screw-lift), a light box too big to hold comfortably (shrunk and made modular). Each failure drove the next design.</div>
 
       <div class="par"><strong>Result</strong>The prototype resolves onion epidermal cells at 4×, 10×, and 40× magnification. My role: co-lead on CAD modeling of the carousel, arm, and stage; microscope dissection; sketching; and writing the engineering portfolio.</div>
+      <div class="par"><strong>Three projects, one habit</strong>A game, a website and a microscope don't look related — but each one came down to the same loop: build the smallest version, break it on purpose, find the real cause, rebuild. That loop is what I actually want to study.</div>
 
       <img src="eng-optical.jpg" alt="Optical path diagram: LED to specimen to lens to camera" style="width:100%;max-width:640px;display:block;margin:18px auto;border-radius:10px;border:1px solid var(--line)">
       <div class="grid2">
@@ -251,7 +280,6 @@
       <li><b>Jamie Duffy</b> — Solas</li>
       <li><b>Drowning Love</b></li>
     </ul>
-    <div class="todo">TODO (Kerem): repertuvar listesini tamamla (4-5 parça). Video olarak en güçlü 2-3 tanesi yeter (Experience mutlaka) — hepsine video koymayalım, kalite > adet.</div>
   </div>
 </section>
 
