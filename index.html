@@ -5,6 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kerem Akin — Student Engineer &amp; Developer</title>
 <meta name="description" content="Kerem Akin — high school engineer, game developer, and pianist. Projects in game development, engineering design, and creative work.">
+<link rel="canonical" href="https://kerem-akin.github.io/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#1b4fd8">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kerem-akin.github.io/">
+<meta property="og:title" content="Kerem Akin — Student Engineer & Developer">
+<meta property="og:description" content="Games, engineering design, and creative work by Kerem Akin — rising senior at Spotswood High School, Virginia.">
+<meta property="og:image" content="https://kerem-akin.github.io/game-poster.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Kerem Akin — Student Engineer & Developer">
+<meta name="twitter:description" content="Games, engineering design, and creative work.">
+<meta name="twitter:image" content="https://kerem-akin.github.io/game-poster.jpg">
 <style>
   :root{
     --ink:#1a1d21;
@@ -52,10 +64,6 @@
   .par{margin:14px 0}
   .par strong{display:block;font-size:14px;text-transform:uppercase;letter-spacing:.05em;color:var(--accent);margin-bottom:2px}
 
-  /* MEDIA PLACEHOLDERS — replace with real <img>/<video> */
-  .media{border:2px dashed #c3c9d4;border-radius:10px;background:var(--soft);
-    padding:34px 20px;text-align:center;color:var(--muted);font-size:15px;margin:18px 0}
-  .media b{color:var(--ink)}
 
   .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
   .vgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
@@ -74,12 +82,18 @@
   footer{border-top:1px solid var(--line);padding:44px 0;color:var(--muted);font-size:15px}
   footer a{color:var(--accent);text-decoration:none}
 
-  /* TODO notes for Kerem — delete before publishing */
-  .todo{background:#fff8e1;border:1px solid #f0dc9a;border-radius:8px;padding:12px 16px;font-size:14px;color:#7a6210;margin:10px 0}
+  .skip{position:absolute;left:-9999px;top:0;background:var(--accent);color:#fff;padding:10px 16px;z-index:20;border-radius:0 0 8px 0}
+  .skip:focus{left:0}
+  @media(max-width:640px){
+    .nav-inner{flex-wrap:wrap;gap:8px;padding:10px 16px}
+    .nav-links{display:flex;gap:14px;width:100%;overflow-x:auto}
+    .nav-links a{margin-left:0;white-space:nowrap}
+  }
 </style>
 </head>
 <body>
 
+<a class="skip" href="#main">Skip to main content</a>
 <nav>
   <div class="nav-inner">
     <div class="nav-name" style="text-transform:uppercase;letter-spacing:.05em">Kerem Akin</div>
@@ -101,6 +115,8 @@
   </div>
 </header>
 
+<main id="main">
+
 <section id="projects">
   <div class="wrap">
     <h2>Projects</h2>
@@ -114,13 +130,14 @@
         <span class="chip">Web design &amp; development</span>
         <span class="chip">Team project</span>
       </div>
-      <p>The 2026 brief: build a community resource hub that helps residents find local services. We built <strong>ConnectHBG</strong> for Harrisonburg, Virginia — an interactive directory of local resources with search, filters and a map view; a spotlight section for featured organisations; a community calendar; a crisis-resources page; a city-government page; a submission form so residents can add resources themselves; bilingual (English/Spanish) support and an accessibility toolbar. We placed <strong>2<sup>nd</sup> in Virginia</strong>, then earned <strong>top-10 national finalist recognition at the National TSA Conference</strong> at National Harbor, MD in June 2026.</p>
+      <p>The 2026 brief: build a community resource hub that helps residents find local services. We built <strong>ConnectHBG</strong> for Harrisonburg, Virginia — a searchable, filterable directory of local resources with a map view, a community calendar, crisis and city-government pages, a form for residents to submit new resources, and bilingual (English/Spanish) support. We placed <strong>2<sup>nd</sup> in Virginia</strong>, then earned <strong>top-10 national finalist recognition at the National TSA Conference</strong> (National Harbor, MD, June 2026).</p>
 
-      <div class="par"><strong>My role</strong>Product direction and quality control on a two-person team. I wrote the detailed feature specifications, ran the testing cycle across fifteen-plus rounds of revisions — logging every layout break, dead link and broken interaction — and made the architecture call to split the single-page app into four linked pages so the entry met the TSA three-page requirement without losing the flow of the main hub.</div>
+      <div class="par"><strong>My role</strong>Product direction and quality control on a two-person team: I wrote the feature specifications, ran the testing cycle across fifteen-plus rounds of revisions — logging every layout break, dead link and broken interaction — and made the architecture call to split the single-page app into four linked pages so the entry met the TSA three-page requirement.</div>
 
-      <div class="par"><strong>What I learned</strong>Most of my previous work was solo and self-contained. Here the standard wasn't "does it run on my machine" but "can a stranger find a food bank in ten seconds, on a phone, in Spanish." That reframed testing from checking my own code to watching for the places a real user would give up.</div>
-      <img src="tsa-nationals.jpeg" alt="Kerem Akin at the National TSA Conference" style="width:100%;max-width:560px;display:block;border-radius:10px;margin:18px 0;border:1px solid var(--line)">
+      <div class="par"><strong>What I learned</strong>The standard stopped being "does it run on my machine" and became "can a stranger find a food bank in ten seconds, on a phone, in Spanish."</div>
+      <img loading="lazy" decoding="async" src="tsa-nationals.jpeg" alt="Kerem Akin at the National TSA Conference" style="width:100%;max-width:560px;display:block;border-radius:10px;margin:18px 0;border:1px solid var(--line)">
       <p style="font-size:15px;margin-bottom:8px"><a href="https://harrisonburg-connect.github.io/Harrisonburg-Connect/" style="display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;padding:10px 22px;border-radius:8px">🌐 View the competition site: Harrisonburg Connect →</a></p>
+      <p style="font-size:13px;color:var(--muted);margin-top:6px">Built as a 2026 TSA competition entry — a student prototype, not an official City of Harrisonburg service.</p>
       <p style="font-size:15px"><a href="https://shs.rockingham.k12.va.us/o/shs/article/3014878" style="color:var(--accent);text-decoration:none;font-weight:600">Featured in Spotswood High School news: "Successful Trip for Spotswood TSA" →</a></p>
     </div>
 
@@ -133,39 +150,38 @@
         <span class="chip">Solo project</span>
         <span class="chip">6 levels + boss fight</span>
       </div>
-      <p>A Python course taught me I loved coding. What I actually wanted to build, though, was a world — so I taught myself GameMaker Language from scratch and spent months building <strong><i>Shards of Balance</i></strong>: a pixel-art platformer where the Crystal of Balance has shattered and you fight through six levels of a corrupted realm to restore it. I designed and coded every system myself — while preparing for my GCSE exams.</p>
+      <p>A Python course taught me I loved coding; what I wanted to build was a world. So I taught myself GameMaker Language from scratch and spent months on <strong><i>Shards of Balance</i></strong>: a pixel-art platformer where the Crystal of Balance has shattered and you fight through six levels of a corrupted realm to restore it. Every system in it is mine — built while I was preparing for my GCSE exams.</p>
 
-      <img src="game-menu.jpg" alt="Shards of Balance title screen" style="width:100%;border-radius:10px;margin:18px 0 6px;border:1px solid var(--line)">
-      <p style="font-size:14px;color:var(--muted);text-align:center;margin-bottom:22px">The title screen — new game, continue from your last level, or quit.</p>
+      <img loading="lazy" decoding="async" src="game-menu.jpg" alt="Shards of Balance title screen" style="width:100%;border-radius:10px;margin:18px 0 6px;border:1px solid var(--line)">
+      <p style="font-size:14px;color:var(--muted);text-align:center;margin-bottom:22px">The title screen — new game, continue, or quit.</p>
 
-      <div class="par"><strong>What's in it</strong>Six hand-built levels across forest, cavern and boss-arena biomes; six enemy types with distinct behaviour (chasing skeletons, slow-but-tanky plants, ranged fire spirits, speed-draining haunted skulls, archers, and an enemy spawner); three NPCs who carry the story; health and speed potions; breakable crates; fire traps; a special ability; scripted cutscenes; and a final boss, Exilion, with three attack phases.</div>
-
-      <div class="grid2">
-        <img src="game-level1.jpg" alt="Level one of Shards of Balance" style="width:100%;height:200px;object-fit:cover;border-radius:10px;border:1px solid var(--line)">
-        <img src="game-cave.jpg" alt="The Forsaken Cavern level with dynamic lighting" style="width:100%;height:200px;object-fit:cover;border-radius:10px;border:1px solid var(--line)">
-      </div>
-      <p style="font-size:14px;color:var(--muted);text-align:center;margin:6px 0 22px">Level one, and the hidden cavern biome — which runs its own lighting system and floating-particle effects.</p>
-
-      <div class="par"><strong>The engineering problem I'm proudest of</strong>Difficulty had to rise without me building a new enemy for every level. Instead I made <em>variants</em>: the same enemy object reads its speed, damage and health from its creation event, and spawns a visual effect above itself — a blue aura for fast versions, a red one for high-damage versions — so the player can read the threat instantly. One object, many difficulty tiers, and the game teaches its own rules without a tutorial.</div>
-
-      <div class="par"><strong>Systems I had to build from nothing</strong>A dialogue system, a camera controller, room transitions, screen shake, parallax backgrounds, a particle controller, a white flash shader for damage feedback, a save system for "continue," and a cutscene engine for the ending.</div>
+      <div class="par"><strong>What's in it</strong>Six hand-built levels; six enemy types with distinct behaviour, from chasing skeletons to ranged fire spirits and speed-draining skulls; three story NPCs; potions, breakable crates and fire traps; and a final boss with three attack phases.</div>
 
       <div class="grid2">
-        <img src="game-ability.jpg" alt="Obtaining the Witch's Infernal Blaze ability" style="width:100%;height:200px;object-fit:cover;border-radius:10px;border:1px solid var(--line)">
-        <img src="game-boss.jpg" alt="The final boss fight against Exilion" style="width:100%;height:200px;object-fit:cover;border-radius:10px;border:1px solid var(--line)">
+        <img loading="lazy" decoding="async" src="game-level1.jpg" alt="Level one of Shards of Balance" style="width:100%;height:200px;object-fit:cover;border-radius:10px;border:1px solid var(--line)">
+        <img loading="lazy" decoding="async" src="game-cave.jpg" alt="The Forsaken Cavern level with dynamic lighting" style="width:100%;height:200px;object-fit:cover;border-radius:10px;border:1px solid var(--line)">
       </div>
-      <p style="font-size:14px;color:var(--muted);text-align:center;margin:6px 0 22px">A chest grants the Witch's Infernal Blaze, which recharges every 30 wand shots — and the final fight against Exilion.</p>
+      <p style="font-size:14px;color:var(--muted);text-align:center;margin:6px 0 22px">Level one, and the hidden cavern biome with its own lighting and particle systems.</p>
 
-      <div class="par"><strong>What I'd fix</strong>Writing my own evaluation was the most useful part of the project. My honest verdict: the enemy AI is reactive rather than smart, the menu is plain, and the difficulty curve between the last level and the boss is uneven. The next version needs varied enemy behaviour, a second weapon, and a rebalanced early game.</div>
+      <div class="par"><strong>The problem I'm proudest of</strong>Difficulty had to rise without a new enemy for every level. So I built <em>variants</em>: one enemy object reads its speed, damage and health from its creation event and spawns an effect above itself — a blue aura for fast versions, red for high-damage ones — so the player reads the threat instantly. One object, many difficulty tiers, and the game teaches its own rules without a tutorial.</div>
+
+      <div class="par"><strong>Built from nothing</strong>Dialogue, camera control, room transitions, screen shake, parallax backgrounds, particles, a white-flash damage shader, a save system, and a cutscene engine.</div>
+
+      <div class="grid2">
+        <img loading="lazy" decoding="async" src="game-ability.jpg" alt="Obtaining the Witch's Infernal Blaze ability" style="width:100%;height:200px;object-fit:cover;border-radius:10px;border:1px solid var(--line)">
+        <img loading="lazy" decoding="async" src="game-boss.jpg" alt="The final boss fight against Exilion" style="width:100%;height:200px;object-fit:cover;border-radius:10px;border:1px solid var(--line)">
+      </div>
+      <p style="font-size:14px;color:var(--muted);text-align:center;margin:6px 0 22px">The Witch's Infernal Blaze recharges every 30 wand shots — and the final fight against Exilion.</p>
+
+      <div class="par"><strong>What I'd fix</strong>Writing my own evaluation was the most useful part of the project. Honest verdict: the enemy AI is reactive rather than smart, the menu is plain, and the jump in difficulty before the boss is uneven. The next version needs varied enemy behaviour, a second weapon, and a rebalanced early game.</div>
 
       <div class="grid2" style="margin-top:18px">
-        <img src="game-poster.jpg" alt="The Realm's Guide — game manual poster designed by Kerem Akin" style="width:100%;height:280px;object-fit:contain;background:var(--soft);border-radius:10px;border:1px solid var(--line)">
-        <img src="game-ending.jpg" alt="Final cutscene artwork" style="width:100%;height:280px;object-fit:cover;border-radius:10px;border:1px solid var(--line)">
+        <img loading="lazy" decoding="async" src="game-poster.jpg" alt="The Realm's Guide — game manual poster designed by Kerem Akin" style="width:100%;height:280px;object-fit:contain;background:var(--soft);border-radius:10px;border:1px solid var(--line)">
+        <img loading="lazy" decoding="async" src="game-ending.jpg" alt="Final cutscene artwork" style="width:100%;height:280px;object-fit:cover;border-radius:10px;border:1px solid var(--line)">
       </div>
-      <p style="font-size:14px;color:var(--muted);text-align:center;margin-top:6px">The player's guide I designed for the game, and hand-drawn art from the closing cutscene.</p>
+      <p style="font-size:14px;color:var(--muted);text-align:center;margin-top:6px">The player's guide I designed, and hand-drawn art from the closing cutscene.</p>
 
-      <p style="margin-top:18px"><a href="#" style="display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;padding:10px 22px;border-radius:8px">▶ Play Shards of Balance on itch.io</a></p>
-      <div class="todo">TODO: itch.io linki gelince butonun href'i güncellenecek; istersen 30-60 sn gameplay videosu da eklenir.</div>
+      <p style="margin-top:18px"><a href="https://itch.io/" style="display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;padding:10px 22px;border-radius:8px">▶ Play Shards of Balance on itch.io</a> <span style="font-size:13px;color:var(--muted);margin-left:8px">(build coming soon)</span></p>
     </div>
 
     <!-- ================= PROJECT 2: TSA GAME DESIGN ================= -->
@@ -175,15 +191,13 @@
         <span class="chip">Unity</span>
         <span class="chip">Team lead</span>
         <span class="chip">Programmer &amp; level design</span>
-        <span class="chip">TSA Competition</span>
+        <span class="chip" style="background:#fff7e6;border-color:#f0dc9a;color:#7a6210">In development</span>
       </div>
-      <p>The brief was to take a retro concept and rebuild it with something that wasn't possible back then. Our team pitched several ideas; the one we built was <strong><i>Hollowpoint</i></strong> — my concept. You play an illuminating ghost collecting soul fragments through the abandoned city of Halomyre, trading them to open doors deeper into the map. The modern twist is a <em>corruption mechanic</em>: your future self appears to help you, but every appearance destabilises the world — distorting visuals, faking messages, and granting the ghosts new abilities. Help has a cost.</p>
+      <p>The brief: take a retro concept and rebuild it with something that wasn't possible back then. Our team pitched several ideas; the one we're building is <strong><i>Hollowpoint</i></strong> — mine. You play a glowing ghost collecting soul fragments through the abandoned city of Halomyre, trading them to open doors deeper into the map. The modern twist is a <em>corruption mechanic</em>: your future self appears to help you, but every appearance destabilises the world — distorting visuals, faking messages, granting the ghosts new abilities. Help has a cost.</p>
 
-      <div class="par"><strong>My role</strong>Team lead, and a programmer on the build. I assigned roles, ran meetings and kept scope realistic against the competition deadline, while building the soul-fragment system, puzzle logic, the guiding-light navigation cues, the cave layout and tileset, and the main menu. I also spent several sessions untangling Unity version-control problems so the whole team could work on one project without overwriting each other.</div>
+      <div class="par"><strong>My role</strong>Team lead and a programmer on the build: assigning roles, running meetings and keeping scope realistic, while building the soul-fragment system, puzzle logic, guiding-light navigation cues, the cave layout and tileset, and the main menu — plus several sessions untangling Unity version control so the whole team could work on one project.</div>
 
-      <div class="par"><strong>What building in a team taught me</strong>Working alone on <i>Shards of Balance</i>, every decision was mine and every bug was mine. Leading a Unity project moved the hard part somewhere else: agreeing on scope, keeping the story ambitious but shippable, resolving technical disagreements, and making sure the pieces different people built actually fit together.</div>
-
-      <div class="todo">TODO (Kerem): oyundan 2-3 ekran görüntüsü / build görseli eklenecek.</div>
+      <div class="par"><strong>The honest lesson</strong>We didn't finish in time to submit for the 2026 season. Alone on <i>Shards of Balance</i>, every bug was mine; leading a team, the hard part was sizing ambition to a deadline. We're carrying the project forward.</div>
     </div>
 
     <!-- ================= PROJECT 3: TSA ENGINEERING DESIGN ================= -->
@@ -195,28 +209,29 @@
         <span class="chip">13 design iterations</span>
         <span class="chip">TSA Competition 2026</span>
       </div>
-      <p>Many classrooms lack working microscopes — yet nearly every student carries a phone with a high-resolution camera. For the TSA theme "Engineering the Tools of Scientific Discovery," our team designed a <strong>MagSafe-mounted, 3D-printed modular microscope</strong> that turns a smartphone into a functional lab instrument, at a target cost under $25.</p>
+      <p>Many classrooms lack working microscopes — yet nearly every student carries a high-resolution camera. For the TSA theme "Engineering the Tools of Scientific Discovery," our team designed a <strong>MagSafe-mounted, 3D-printed modular microscope</strong> that turns a smartphone into a functional lab instrument for under $25.</p>
 
-      <div class="par"><strong>How we started</strong>We bought a real microscope and dissected it to understand its optics and mechanics, then designed our own compact system from scratch: a rotating lens carousel (4×/10×/40×) with magnetic click-stops, a screw-lift focus stage, and a modular LED illumination box.</div>
+      <div class="par"><strong>How we started</strong>We bought a real microscope and took it apart to understand its optics, then designed our own: a rotating 4×/10×/40× lens carousel with magnetic click-stops, a screw-lift focus stage, and a modular LED illumination box.</div>
       <div class="grid2" style="margin:18px 0">
-        <img src="eng-sketch1.jpeg" alt="First hand sketch of the microscope design" style="width:100%;height:220px;object-fit:cover;border-radius:10px;border:1px solid var(--line)">
-        <img src="eng-sketch2.jpeg" alt="Hand sketches of microscope components" style="width:100%;height:220px;object-fit:cover;border-radius:10px;border:1px solid var(--line)">
+        <img loading="lazy" decoding="async" src="eng-sketch1.jpeg" alt="First hand sketch of the microscope design" style="width:100%;height:220px;object-fit:cover;border-radius:10px;border:1px solid var(--line)">
+        <img loading="lazy" decoding="async" src="eng-sketch2.jpeg" alt="Hand sketches of microscope components" style="width:100%;height:220px;object-fit:cover;border-radius:10px;border:1px solid var(--line)">
       </div>
-      <p style="font-size:14px;color:var(--muted);margin-top:-10px;text-align:center">First hand sketches from our design notebook — where every iteration started.</p>
+      <p style="font-size:14px;color:var(--muted);margin-top:-10px;text-align:center">The first hand sketches — where every iteration started.</p>
 
-      <div class="par"><strong>Problem → solution (my favorite example)</strong>MagSafe rings are perfect circles, so the mount rotated slightly on every attach — misaligning the lens with the camera. We added an angular jut-out that registers against the phone's camera bump, turning alignment from a user-skill problem into a mechanically guaranteed result.</div>
+      <div class="par"><strong>The problem I like best</strong>MagSafe rings are perfect circles, so the mount rotated slightly on every attach and threw the lens out of alignment with the camera. We added an angular jut-out that registers against the phone's camera bump — turning alignment from a user-skill problem into a mechanical guarantee.</div>
 
-      <div class="par"><strong>Iteration, including failures</strong>Thirteen documented iterations: a clip-style mount that couldn't center (eliminated), a drop-in lens carousel where lenses shifted (redesigned with threaded seats), a rack-and-pinion focus system too bulky for a phone (replaced by a screw-lift), a light box too big to hold comfortably (shrunk and made modular). Each failure drove the next design.</div>
+      <div class="par"><strong>Iteration, including failures</strong>Thirteen documented iterations: a clip-style mount that couldn't centre (eliminated), a drop-in lens carousel where lenses shifted (redesigned with threaded seats), a rack-and-pinion focus system too bulky for a phone (replaced by a screw-lift), a light box too big to hold comfortably (shrunk and made modular). Each failure drove the next design.</div>
+      <img loading="lazy" decoding="async" src="eng-iterations.jpg" alt="Three 3D-printed versions of the focus knob from successive iterations" style="width:100%;max-width:420px;display:block;margin:16px auto 4px;border-radius:10px;border:1px solid var(--line)">
+      <p style="font-size:14px;color:var(--muted);text-align:center;margin-bottom:16px">Three printed versions of one part — the focus knob.</p>
 
-      <div class="par"><strong>Result</strong>The prototype resolves onion epidermal cells at 4×, 10×, and 40× magnification. My role: co-lead on CAD modeling of the carousel, arm, and stage; microscope dissection; sketching; and writing the engineering portfolio.</div>
-      <div class="par"><strong>Three projects, one habit</strong>A game, a website and a microscope don't look related — but each one came down to the same loop: build the smallest version, break it on purpose, find the real cause, rebuild. That loop is what I actually want to study.</div>
+      <div class="par"><strong>Result</strong>The prototype resolves onion epidermal cells at 4×, 10× and 40×. My role: CAD co-lead on the carousel, arm and stage; the dissection; the sketches; and the engineering portfolio.</div>
+      <div class="par"><strong>One habit across three projects</strong>A game, a website and a microscope don't look related — but each came down to the same loop: build the smallest version, break it on purpose, find the real cause, rebuild.</div>
 
-      <img src="eng-optical.jpg" alt="Optical path diagram: LED to specimen to lens to camera" style="width:100%;max-width:640px;display:block;margin:18px auto;border-radius:10px;border:1px solid var(--line)">
+      <img loading="lazy" decoding="async" src="eng-optical.jpg" alt="Optical path diagram: LED to specimen to lens to camera" style="width:100%;max-width:640px;display:block;margin:18px auto;border-radius:10px;border:1px solid var(--line)">
       <div class="grid2">
-        <img src="eng-prototype.jpeg" alt="3D-printed microscope prototype" style="width:100%;height:240px;object-fit:cover;border-radius:10px;border:1px solid var(--line)">
-        <img src="eng-carousel.jpeg" alt="Lens carousel engineering drawing" style="width:100%;height:240px;object-fit:contain;background:#fff;border-radius:10px;border:1px solid var(--line)">
+        <img loading="lazy" decoding="async" src="eng-carousel.jpeg" alt="Lens carousel engineering drawing" style="width:100%;height:240px;object-fit:contain;background:#fff;border-radius:10px;border:1px solid var(--line)">
+        <img loading="lazy" decoding="async" src="eng-prototype.jpeg" alt="3D-printed microscope prototype" style="width:100%;height:240px;object-fit:contain;background:var(--soft);border-radius:10px;border:1px solid var(--line)">
       </div>
-      <div class="todo">TODO (Kerem): istersen onion cell mikroskop görüntüsü de eklenir; tam portfolio PDF'ine link verilebilir.</div>
     </div>
 
     <!-- ================= PROJECT 4: ROSE-HULMAN CATAPULT ================= -->
@@ -227,14 +242,15 @@
         <span class="chip">Team build</span>
         <span class="chip">Hands-on prototyping</span>
       </div>
-      <p>At Rose-Hulman's Operation Catapult residential engineering program, we designed and built a working catapult from scratch — moving from concept sketches and calculations to a physical launch-tested machine.</p>
-      <div class="par"><strong>My role</strong>Group lead of a two-person team — we designed, built, and tested every part together.</div>
+      <p>The assignment at Rose-Hulman's Operation Catapult was precision, not power: build a catapult that lands golf balls at <strong>10, 20 and 30 feet</strong> on demand. Working as a two-person team, we went from research and projectile-motion calculations to a launch-tested machine in six days.</p>
+      <div class="par"><strong>Prototype 1 → 3</strong>Our first build launched, but the same pull produced different distances — the release angle wasn't repeatable. We switched to a spring-loaded A-frame, which made distance a function of three controllable variables (mass, spring constant, pull distance) at a fixed launch angle. The third prototype restructured the frame entirely, adding mounting points to kill the flex that was still costing us accuracy.</div>
+      <div class="par"><strong>My role</strong>Group lead of the two-person team; we designed, built and tested every part together.</div>
       <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0 6px">
-        <img src="catapult.jpeg" alt="Catapult project at Rose-Hulman Operation Catapult" style="width:100%;height:220px;object-fit:contain;background:var(--soft);border-radius:10px;border:1px solid var(--line)">
-        <img src="catapult-poster.jpeg" alt="Operation Catapult project poster" style="width:100%;height:220px;object-fit:contain;background:var(--soft);border-radius:10px;border:1px solid var(--line)">
-        <img src="catapult-calcs.jpeg" alt="Projectile-motion and energy calculations from the design notebook" style="width:100%;height:220px;object-fit:contain;background:var(--soft);border-radius:10px;border:1px solid var(--line)">
+        <img loading="lazy" decoding="async" src="catapult.jpeg" alt="Catapult project at Rose-Hulman Operation Catapult" style="width:100%;height:220px;object-fit:contain;background:var(--soft);border-radius:10px;border:1px solid var(--line)">
+        <img loading="lazy" decoding="async" src="catapult-poster.jpeg" alt="Operation Catapult project poster" style="width:100%;height:220px;object-fit:contain;background:var(--soft);border-radius:10px;border:1px solid var(--line)">
+        <img loading="lazy" decoding="async" src="catapult-calcs.jpeg" alt="Projectile-motion and energy calculations from the design notebook" style="width:100%;height:220px;object-fit:contain;background:var(--soft);border-radius:10px;border:1px solid var(--line)">
       </div>
-      <p style="font-size:14px;color:var(--muted);text-align:center">The catapult, our project poster, and projectile-motion calculations from the design notebook.</p>
+      <p style="font-size:14px;color:var(--muted);text-align:center">The build, the poster, and the projectile-motion work behind it.</p>
     </div>
 
   </div>
@@ -245,36 +261,36 @@
     <h2>Creative Work — Piano</h2>
     <p class="section-sub">Self-taught, starting on a 44-key keyboard with YouTube tutorials. Through every move between Turkey, Dubai, and the United States, the piano never left my side.</p>
 
-    <div class="piano-note">It started in seventh grade, when I heard my father listening to Ludovico Einaudi's "Experience" while grading papers. I decided I would not stop until I learned it — a month of stubborn effort later, I played it on my school's grand piano.</div>
+    <div class="piano-note">It started in middle school, when I heard my father listening to Ludovico Einaudi's "Experience" while grading papers. I decided I would not stop until I learned it — a month of stubborn effort later, I played it on my school's grand piano.</div>
 
     <div class="vgrid">
       <div>
-        <video controls preload="metadata" src="videos/piano1.mp4"></video>
+        <video controls playsinline preload="metadata" poster="videos/piano1.jpg" aria-label="Piano performance recording" src="videos/piano1.mp4"></video>
         <p style="font-size:13px;color:var(--muted);margin-top:4px">🎹 Jamie Duffy — Solas</p>
       </div>
       <div>
-        <video controls preload="metadata" src="videos/piano2.mp4"></video>
+        <video controls playsinline preload="metadata" poster="videos/piano2.jpg" aria-label="Piano performance recording" src="videos/piano2.mp4"></video>
         <p style="font-size:13px;color:var(--muted);margin-top:4px">🎹 Gibran Alcocer — Idea 22</p>
       </div>
       <div>
-        <video controls preload="metadata" src="videos/piano3.mp4"></video>
+        <video controls playsinline preload="metadata" poster="videos/piano3.jpg" aria-label="Piano performance recording" src="videos/piano3.mp4"></video>
         <p style="font-size:13px;color:var(--muted);margin-top:4px">🎹 Drowning Love</p>
       </div>
       <div>
-        <video controls preload="metadata" src="videos/pianoold1.mp4"></video>
+        <video controls playsinline preload="metadata" poster="videos/pianoold1.jpg" aria-label="Piano performance recording" src="videos/pianoold1.mp4"></video>
         <p style="font-size:13px;color:var(--muted);margin-top:4px">🎹 Yiruma — River Flows in You <i>(early recording, four years ago)</i></p>
       </div>
       <div>
-        <video controls preload="metadata" src="videos/pianoold2.mp4"></video>
+        <video controls playsinline preload="metadata" poster="videos/pianoold2.jpg" aria-label="Piano performance recording" src="videos/pianoold2.mp4"></video>
         <p style="font-size:13px;color:var(--muted);margin-top:4px">🎹 Ludovico Einaudi — Experience <i>(early recording, four years ago — new version coming)</i></p>
       </div>
     </div>
-    <p>Since then I have kept challenging myself with advanced repertoire, including arranging the entire Interstellar soundtrack by ear.</p>
+    <p>Since then I have kept challenging myself with advanced repertoire, including arranging selections from the Interstellar soundtrack by ear.</p>
 
     <div class="par" style="margin-top:24px"><strong>Repertoire</strong></div>
     <ul class="about-facts">
       <li><b>Ludovico Einaudi</b> — Experience</li>
-      <li><b>Hans Zimmer</b> — Interstellar</li>
+      <li><b>Hans Zimmer</b> — Interstellar (selections, own arrangement)</li>
       <li><b>Yiruma</b> — River Flows in You</li>
       <li><b>Gibran Alcocer</b> — Idea 22</li>
       <li><b>Jamie Duffy</b> — Solas</li>
@@ -287,9 +303,9 @@
   <div class="wrap">
     <h2>Summer Programs</h2>
     <ul class="about-facts">
-      <li><b><a href="https://www.doe.virginia.gov/teaching-learning-assessment/specialized-instruction/governor-s-schools/summer-residential-governor-s-schools" style="color:var(--ink);text-decoration:none">Summer Residential Governor's School</a> — Mathematics, Science &amp; Technology</b> · University of Lynchburg · selective statewide 3-week program (about 100 students) · coursework incl. <i>The Dark Night Sky — Serious Questions for Real Astronomers</i> (college-level astronomy &amp; astrophysics) · July 5–25, 2026</li>
-      <li><b>Operation Catapult — Rose-Hulman Institute of Technology</b> · residential 2-week engineering program: team-based design-build project (see Projects above) · June 8–18, 2026</li>
-      <li><b>Sabancı University Summer High School Program</b> · 2-week residential program: Machine Learning &amp; AI, Python Programming, Quantum Physics, Industrial Engineering · August 4–16, 2024</li>
+      <li><b><a href="https://www.doe.virginia.gov/teaching-learning-assessment/specialized-instruction/governor-s-schools/summer-residential-governor-s-schools" style="color:var(--ink);text-decoration:none">Summer Residential Governor's School — Mathematics, Science &amp; Technology</a></b> · University of Lynchburg · 3 weeks, ~100 students selected statewide · college-level astronomy &amp; astrophysics (<i>The Dark Night Sky</i>) · July 2026</li>
+      <li><b>Operation Catapult — Rose-Hulman Institute of Technology</b> · 2-week residential engineering program, team design-build project · June 2026</li>
+      <li><b>Sabancı University Summer High School Program</b> · 2 weeks residential: Machine Learning &amp; AI, Python, Quantum Physics, Industrial Engineering · August 4–16, 2024</li>
     </ul>
   </div>
 </section>
@@ -297,20 +313,22 @@
 <section id="about">
   <div class="wrap">
     <h2>About</h2>
-    <img src="headshot.jpeg" alt="Kerem Akin" style="width:150px;height:auto;border-radius:12px;float:right;margin:0 0 16px 24px;border:1px solid var(--line)">
-    <p>I grew up in Ankara, spent four years in Dubai, and now live in Virginia — three school systems, three fresh starts, one constant habit of building things to understand them. I plan to study engineering, drawn especially to the places where software meets physical systems.</p>
+    <img loading="lazy" decoding="async" src="headshot.jpeg" alt="Kerem Akin" style="width:150px;height:auto;border-radius:12px;float:right;margin:0 0 16px 24px;border:1px solid var(--line)">
+    <p>I grew up in Ankara, spent four years in Dubai, and now live in Virginia — three school systems, three fresh starts, one constant habit of building things to understand them. I plan to study engineering, drawn to where software meets physical systems.</p>
     <ul class="about-facts">
       <li><b>Now:</b> Rising senior at Spotswood High School, VA (Class of 2027) — senior-year courseload: 7 APs + DE Calculus · National Honor Society member</li>
       <li><b>Recognition:</b> College Board National Recognition Program — Rural and Small-Town Recognition Award (2026)</li>
       <li><b>Service:</b> Official SAT peer tutor (College Board) — tutoring a small group of peers in a 4-week virtual bootcamp · Sources of Strength Peer Leader</li>
-      <li><b>Also:</b> UKMT Intermediate Maths Challenge Gold (Best in School) · chess (1100 Elo) · Rubik's cube under 45 seconds · basketball</li>
+      <li><b>Also:</b> UKMT Intermediate Maths Challenge Gold (Best in School) · chess (Chess.com rapid rating ~1100) · Rubik's cube under 45 seconds · basketball</li>
     </ul>
   </div>
 </section>
 
+</main>
+
 <footer>
   <div class="wrap">
-    <p><b>Contact:</b> <a href="mailto:akinkerem717@gmail.com">akinkerem717@gmail.com</a> · <a href="resume.pdf">Resume (PDF)</a></p>
+    <p><b>Contact:</b> <a href="mailto:akinkerem717@gmail.com">akinkerem717@gmail.com</a> · <a href="resume.pdf">Resume (PDF)</a> · <a href="https://github.com/kerem-akin">GitHub</a></p>
     <p style="margin-top:8px">© 2026 Kerem Akin · Designed and built by Kerem Akin</p>
   </div>
 </footer>
