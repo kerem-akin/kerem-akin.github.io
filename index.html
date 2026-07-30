@@ -82,6 +82,13 @@
   footer{border-top:1px solid var(--line);padding:44px 0;color:var(--muted);font-size:15px}
   footer a{color:var(--accent);text-decoration:none}
 
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  .about-photo{width:150px;height:auto;float:right;margin:0 0 16px 24px}
+  @media(max-width:640px){
+    .grid3{grid-template-columns:1fr}
+    .about-photo{float:none;display:block;width:140px;margin:0 auto 18px}
+    .vgrid video{aspect-ratio:3/4}
+  }
   .skip{position:absolute;left:-9999px;top:0;background:var(--accent);color:#fff;padding:10px 16px;z-index:20;border-radius:0 0 8px 0}
   .skip:focus{left:0}
   @media(max-width:640px){
@@ -181,57 +188,19 @@
       </div>
       <p style="font-size:14px;color:var(--muted);text-align:center;margin-top:6px">The player's guide I designed, and hand-drawn art from the closing cutscene.</p>
 
-      <p style="margin-top:18px"><a href="https://itch.io/" style="display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;padding:10px 22px;border-radius:8px">▶ Play Shards of Balance on itch.io</a> <span style="font-size:13px;color:var(--muted);margin-left:8px">(build coming soon)</span></p>
+      <p style="margin-top:18px"><span style="display:inline-block;background:var(--soft);border:1px solid var(--line);color:var(--muted);font-weight:600;padding:10px 22px;border-radius:8px">▶ Playable build coming soon — <span style="font-weight:400">Shards of Balance on itch.io</span></span></p>
     </div>
 
     <!-- ================= PROJECT 2: TSA GAME DESIGN ================= -->
-    <div class="project">
-      <h3>TSA Video Game Design — <i>Hollowpoint</i> (Unity, team lead)</h3>
-      <div class="meta">
+    <div class="project" style="background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:22px 24px">
+      <h3 style="font-size:19px">Current project — <i>Hollowpoint</i> (Unity, TSA Video Game Design)</h3>
+      <div class="meta" style="margin-bottom:10px">
         <span class="chip">Unity</span>
         <span class="chip">Team lead</span>
-        <span class="chip">Programmer &amp; level design</span>
         <span class="chip" style="background:#fff7e6;border-color:#f0dc9a;color:#7a6210">In development</span>
       </div>
-      <p>The brief: take a retro concept and rebuild it with something that wasn't possible back then. Our team pitched several ideas; the one we're building is <strong><i>Hollowpoint</i></strong> — mine. You play a glowing ghost collecting soul fragments through the abandoned city of Halomyre, trading them to open doors deeper into the map. The modern twist is a <em>corruption mechanic</em>: your future self appears to help you, but every appearance destabilises the world — distorting visuals, faking messages, granting the ghosts new abilities. Help has a cost.</p>
-
-      <div class="par"><strong>My role</strong>Team lead and a programmer on the build: assigning roles, running meetings and keeping scope realistic, while building the soul-fragment system, puzzle logic, guiding-light navigation cues, the cave layout and tileset, and the main menu — plus several sessions untangling Unity version control so the whole team could work on one project.</div>
-
-      <div class="par"><strong>The honest lesson</strong>We didn't finish in time to submit for the 2026 season. Alone on <i>Shards of Balance</i>, every bug was mine; leading a team, the hard part was sizing ambition to a deadline. We're carrying the project forward.</div>
-    </div>
-
-    <!-- ================= PROJECT 3: TSA ENGINEERING DESIGN ================= -->
-    <div class="project">
-      <h3>TSA Engineering Design — Modular Smartphone Microscope</h3>
-      <div class="meta">
-        <span class="chip">Optics &amp; CAD (Onshape)</span>
-        <span class="chip">3D printing</span>
-        <span class="chip">13 design iterations</span>
-        <span class="chip">TSA Competition 2026</span>
-      </div>
-      <p>Many classrooms lack working microscopes — yet nearly every student carries a high-resolution camera. For the TSA theme "Engineering the Tools of Scientific Discovery," our team designed a <strong>MagSafe-mounted, 3D-printed modular microscope</strong> that turns a smartphone into a functional lab instrument for under $25.</p>
-
-      <div class="par"><strong>How we started</strong>We bought a real microscope and took it apart to understand its optics, then designed our own: a rotating 4×/10×/40× lens carousel with magnetic click-stops, a screw-lift focus stage, and a modular LED illumination box.</div>
-      <div class="grid2" style="margin:18px 0">
-        <img loading="lazy" decoding="async" src="eng-sketch1.jpeg" alt="First hand sketch of the microscope design" style="width:100%;height:220px;object-fit:cover;border-radius:10px;border:1px solid var(--line)">
-        <img loading="lazy" decoding="async" src="eng-sketch2.jpeg" alt="Hand sketches of microscope components" style="width:100%;height:220px;object-fit:cover;border-radius:10px;border:1px solid var(--line)">
-      </div>
-      <p style="font-size:14px;color:var(--muted);margin-top:-10px;text-align:center">The first hand sketches — where every iteration started.</p>
-
-      <div class="par"><strong>The problem I like best</strong>MagSafe rings are perfect circles, so the mount rotated slightly on every attach and threw the lens out of alignment with the camera. We added an angular jut-out that registers against the phone's camera bump — turning alignment from a user-skill problem into a mechanical guarantee.</div>
-
-      <div class="par"><strong>Iteration, including failures</strong>Thirteen documented iterations: a clip-style mount that couldn't centre (eliminated), a drop-in lens carousel where lenses shifted (redesigned with threaded seats), a rack-and-pinion focus system too bulky for a phone (replaced by a screw-lift), a light box too big to hold comfortably (shrunk and made modular). Each failure drove the next design.</div>
-      <img loading="lazy" decoding="async" src="eng-iterations.jpg" alt="Three 3D-printed versions of the focus knob from successive iterations" style="width:100%;max-width:420px;display:block;margin:16px auto 4px;border-radius:10px;border:1px solid var(--line)">
-      <p style="font-size:14px;color:var(--muted);text-align:center;margin-bottom:16px">Three printed versions of one part — the focus knob.</p>
-
-      <div class="par"><strong>Result</strong>The prototype resolves onion epidermal cells at 4×, 10× and 40×. My role: CAD co-lead on the carousel, arm and stage; the dissection; the sketches; and the engineering portfolio.</div>
-      <div class="par"><strong>One habit across three projects</strong>A game, a website and a microscope don't look related — but each came down to the same loop: build the smallest version, break it on purpose, find the real cause, rebuild.</div>
-
-      <img loading="lazy" decoding="async" src="eng-optical.jpg" alt="Optical path diagram: LED to specimen to lens to camera" style="width:100%;max-width:640px;display:block;margin:18px auto;border-radius:10px;border:1px solid var(--line)">
-      <div class="grid2">
-        <img loading="lazy" decoding="async" src="eng-carousel.jpeg" alt="Lens carousel engineering drawing" style="width:100%;height:240px;object-fit:contain;background:#fff;border-radius:10px;border:1px solid var(--line)">
-        <img loading="lazy" decoding="async" src="eng-prototype.jpeg" alt="3D-printed microscope prototype" style="width:100%;height:240px;object-fit:contain;background:var(--soft);border-radius:10px;border:1px solid var(--line)">
-      </div>
+      <p style="margin-bottom:10px">A puzzle game of my own concept: you play a glowing ghost collecting soul fragments through the abandoned city of Halomyre. The twist is a <em>corruption mechanic</em> — your future self appears to help you, but every appearance destabilises the world. Help has a cost.</p>
+      <p style="font-size:15px;color:var(--muted);margin-bottom:0">I lead the team and build the fragment system, puzzle logic, cave layout and menu. We didn't finish in time to submit for the 2026 season — the lesson was sizing ambition to a deadline. Screenshots and a playable scene will be added as we go.</p>
     </div>
 
     <!-- ================= PROJECT 4: ROSE-HULMAN CATAPULT ================= -->
@@ -245,7 +214,7 @@
       <p>The assignment at Rose-Hulman's Operation Catapult was precision, not power: build a catapult that lands golf balls at <strong>10, 20 and 30 feet</strong> on demand. Working as a two-person team, we went from research and projectile-motion calculations to a launch-tested machine in six days.</p>
       <div class="par"><strong>Prototype 1 → 3</strong>Our first build launched, but the same pull produced different distances — the release angle wasn't repeatable. We switched to a spring-loaded A-frame, which made distance a function of three controllable variables (mass, spring constant, pull distance) at a fixed launch angle. The third prototype restructured the frame entirely, adding mounting points to kill the flex that was still costing us accuracy.</div>
       <div class="par"><strong>My role</strong>Group lead of the two-person team; we designed, built and tested every part together.</div>
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0 6px">
+      <div class="grid3" style="margin:18px 0 6px">
         <img loading="lazy" decoding="async" src="catapult.jpeg" alt="Catapult project at Rose-Hulman Operation Catapult" style="width:100%;height:220px;object-fit:contain;background:var(--soft);border-radius:10px;border:1px solid var(--line)">
         <img loading="lazy" decoding="async" src="catapult-poster.jpeg" alt="Operation Catapult project poster" style="width:100%;height:220px;object-fit:contain;background:var(--soft);border-radius:10px;border:1px solid var(--line)">
         <img loading="lazy" decoding="async" src="catapult-calcs.jpeg" alt="Projectile-motion and energy calculations from the design notebook" style="width:100%;height:220px;object-fit:contain;background:var(--soft);border-radius:10px;border:1px solid var(--line)">
@@ -313,7 +282,7 @@
 <section id="about">
   <div class="wrap">
     <h2>About</h2>
-    <img loading="lazy" decoding="async" src="headshot.jpeg" alt="Kerem Akin" style="width:150px;height:auto;border-radius:12px;float:right;margin:0 0 16px 24px;border:1px solid var(--line)">
+    <img loading="lazy" decoding="async" class="about-photo" src="headshot.jpeg" alt="Kerem Akin" style="border-radius:12px;border:1px solid var(--line)">
     <p>I grew up in Ankara, spent four years in Dubai, and now live in Virginia — three school systems, three fresh starts, one constant habit of building things to understand them. I plan to study engineering, drawn to where software meets physical systems.</p>
     <ul class="about-facts">
       <li><b>Now:</b> Rising senior at Spotswood High School, VA (Class of 2027) — senior-year courseload: 7 APs + DE Calculus · National Honor Society member</li>
