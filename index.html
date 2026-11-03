@@ -77,6 +77,8 @@
   .about-facts{list-style:none;margin-top:16px}
   .about-facts li{padding:8px 0;border-bottom:1px dashed var(--line);color:var(--muted)}
   .about-facts li b{color:var(--ink);font-weight:600}
+  .rep-list{display:grid;grid-template-columns:1fr 1fr;column-gap:28px}
+  @media(max-width:640px){.rep-list{grid-template-columns:1fr}}
 
   /* FOOTER */
   footer{border-top:1px solid var(--line);padding:44px 0;color:var(--muted);font-size:15px}
@@ -289,6 +291,14 @@
         <p style="font-size:13px;color:var(--muted);margin-top:4px">🎹 Ludovico Einaudi — Experience <i>(new recording, October 2026)</i></p>
       </div>
       <div>
+        <video controls playsinline preload="metadata" poster="videos/piano8.jpg" aria-label="Piano performance: Ludovico Einaudi, Nuvole Bianche" src="videos/piano8.mp4"></video>
+        <p style="font-size:13px;color:var(--muted);margin-top:4px">🎹 Ludovico Einaudi — Nuvole Bianche <i>(new recording)</i></p>
+      </div>
+      <div>
+        <video controls playsinline preload="metadata" poster="videos/piano9.jpg" aria-label="Piano performance: Hans Zimmer, Cornfield Chase from Interstellar" src="videos/piano9.mp4"></video>
+        <p style="font-size:13px;color:var(--muted);margin-top:4px">🎹 Hans Zimmer — Cornfield Chase <i>(Interstellar, own arrangement, new recording)</i></p>
+      </div>
+      <div>
         <video controls playsinline preload="metadata" poster="videos/piano5.jpg" aria-label="Piano performance: Justin Hurwitz, Mia &amp; Sebastian's Theme" src="videos/piano5.mp4"></video>
         <p style="font-size:13px;color:var(--muted);margin-top:4px">🎹 Justin Hurwitz — Mia &amp; Sebastian's Theme <i>(La La Land, October 2026)</i></p>
       </div>
@@ -320,13 +330,13 @@
     <p>Since then I have kept challenging myself with advanced repertoire, including arranging selections from the Interstellar soundtrack by ear.</p>
 
     <div class="par" style="margin-top:24px"><strong>Repertoire</strong></div>
-    <ul class="about-facts">
-      <li><b>Ludovico Einaudi</b> — Experience</li>
-      <li><b>Hans Zimmer</b> — Interstellar (selections, own arrangement)</li>
+    <ul class="about-facts rep-list">
+      <li><b>Ludovico Einaudi</b> — Experience · Nuvole Bianche</li>
+      <li><b>Hans Zimmer</b> — Cornfield Chase and other Interstellar selections (own arrangement)</li>
       <li><b>Justin Hurwitz</b> — Mia &amp; Sebastian's Theme (La La Land)</li>
-      <li><b>Yiruma</b> — River Flows in You</li>
-      <li><b>Gibran Alcocer</b> — Idea 22</li>
       <li><b>Jamie Duffy</b> — Solas</li>
+      <li><b>Gibran Alcocer</b> — Idea 22</li>
+      <li><b>Yiruma</b> — River Flows in You</li>
       <li><b>Drowning Love</b></li>
     </ul>
   </div>
